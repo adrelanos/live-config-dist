@@ -1,0 +1,18 @@
+## Copyright (C) 2026 - 2026 ENCRYPTED SUPPORT LLC <adrelanos@whonix.org>
+## See the file COPYING for copying conditions.
+
+[Unit]
+Description=Enables unprivileged browser installation in ISO live mode
+After=sysinit.target
+Before=privleapd.service
+Conflicts=shutdown.target
+Before=shutdown.target
+DefaultDependencies=no
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/cp /usr/share/browser-choice/live-config/browser-choice-live.conf /etc/privleap/conf.d/
+
+[Install]
+WantedBy=multi-user.target
