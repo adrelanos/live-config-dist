@@ -1,3 +1,9 @@
+live-config-dist (3:9.9-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@whonix.org>  Thu, 22 Jan 2026 10:59:10 +0000
+
 live-config-dist (3:9.8-1) unstable; urgency=medium
 
   * New upstream version (local package).
