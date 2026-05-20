@@ -1,3 +1,9 @@
+commit f1cddfab53fe727b04321a0499ffab453ccf806a
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Mar 28 09:47:44 2026 +0000
+
+    bumped changelog version
+
 commit 08c116f6c44dfeb8e7e7d116ea1790af06536cdd
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Mar 28 05:30:33 2026 -0400
@@ -764,9 +770,9 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Sep 11 04:52:33 2024 -0400
 
     remove productUrl, supportUrl, releaseNotesUrl
-    
+
     because calamares runs as root
-    
+
     and then executing a browser from calamares as user is too error-prone
 
 commit 0124723a78d636816253b4e1bd806ddf23985f04
@@ -800,7 +806,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Aug 28 05:34:05 2024 -0400
 
     Merge pull request #5 from ArrayBolt3/master
-    
+
     Improve localization, disk encryption, and a few other things
 
 commit 2e7cb0016bc9960b471065a16cfa38c99fac3513
@@ -869,7 +875,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sun Jul 28 18:29:22 2024 -0400
 
     removed autologin
-    
+
     because now in usability-misc
 
 commit 0e941f73bf6a1c04f28159a222489cea6113f31e
@@ -889,7 +895,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Fri Jul 5 10:42:25 2024 -0400
 
     no longer hiding `/usr/share/backgrounds/xfce/xfce-shapes.svg` in live-config-dist
-    
+
     doing that in desktop-config-dist instead
 
 commit ae6a8e762a8a061a6cef5c872fc813129c45271e
@@ -915,9 +921,9 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Jul 4 08:05:22 2024 -0400
 
     remove `sources-media` module
-    
+
     because this runs `apt-get update` which times out after 500 seconds if there is no network connection during the installer
-    
+
     This is to speed up installation when no network has been set up.
 
 commit 23da119181e11e883edc03978a3b54d05ab894a1
@@ -943,7 +949,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Apr 25 20:35:52 2024 -0400
 
     fix, no longer set efiBootloaderId: "debian"
-    
+
     to avoid conflict with Debian installations on internal hard drive
     when installing Kicksecure to an external hard drive
 
@@ -970,13 +976,13 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Thu Apr 25 08:26:23 2024 -0400
 
     change Live ISO background image
-    
+
     Due to different monitor names file
     /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
     cannot list them all.
     Avoid the confusing Xfce logo, default image by hiding Xfce's default
     background image file.
-    
+
     config-package-dev hide /usr/share/backgrounds/xfce/xfce-shapes.svg
 
 commit 0033965ccda579ec4ce27ffb7b1f136d53d382b8
@@ -996,7 +1002,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Apr 24 15:24:59 2024 -0400
 
     different Xfce background image for ISO
-    
+
     config-package-dev displace /etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-desktop.xml
 
 commit b421b44fc676fa97a548ca99844721a23170270a
@@ -1017,7 +1023,7 @@ Author: grass <grass@danwin1210.de>
 Date:   Wed Apr 24 12:45:09 2024 +0000
 
     Use lock icon for Calamares installer
-    
+
     Whonix image removed as it isn't referenced. On icon-pack-dist, Whonix
     icons were also added and can be referenced later on.
 
@@ -1068,7 +1074,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Apr 1 07:28:14 2024 -0400
 
     unencrypted /boot
-    
+
     https://forums.kicksecure.com/t/iso-change-to-unencrypted-boot-if-using-full-disk-encryption/420
 
 commit 0f9d6c0bfcb2b786c26dd0dd774017f31b4453f1
@@ -1382,9 +1388,9 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Mon Dec 11 09:49:40 2023 -0500
 
     no longer modify calamares initramfs-tools module
-    
+
     because installer will be dracut based
-    
+
     http://forums.whonix.org/t/whonix-host-operating-system/3931/230
 
 commit e53e3b8bf70134c1e317b83fb6250a7263b4b806
@@ -1398,7 +1404,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Fri Dec 8 14:48:50 2023 -0500
 
     Revert "keep hardened grub linux kernel parameters synchronized with Live ISO"
-    
+
     This reverts commit dfdba6ef6341f4072699567f19fe0317577c8c0d.
 
 commit d2fc613ca08024428df510c3ce954a201392d892
@@ -1436,9 +1442,9 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Tue Dec 5 13:37:38 2023 -0500
 
     keep hardened grub linux kernel parameters synchronized with Live ISO
-    
+
     use required extra linux kernel parameters when booting from Live ISO
-    
+
     https://forums.whonix.org/t/whonix-host-chainboot-boot-grub-grub-cfg-to-keep-whonix-host-iso-kernel-boot-parameters-synchronized-with-whonix-host-installed/9546
 
 commit db734b183e3f62a66543306293b19a9012c31afc
@@ -1452,7 +1458,7 @@ Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Nov 11 13:41:30 2023 -0500
 
     change license to AGPL-3+
-    
+
     https://forums.whonix.org/t/license-change-to-agplv3/17455
 
 commit 31215d2676e8c6e7f9a739d679ad4300c579efb7
@@ -1670,7 +1676,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jan 23 01:42:57 2021 -0500
 
     config-package-dev displace /etc/calamares/modules/bootloader
-    
+
     https://forums.whonix.org/t/whonix-host-operating-system/3931/296
 
 commit b3b49b54cfd464a4fbeda335ade5ac9195f6dc9d
@@ -1686,16 +1692,16 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jan 23 06:04:55 2021 +0000
 
     Merge branch 'onion_knight_2-master-patch-15461' into 'master'
-    
+
     Add new file bootloader.conf. Default debian calamares file, with line...
-    
+
     See merge request whonix/live-config-dist!1
 
 commit 20d2b3c791878fb1f9350c0cc4706b186a973f4d
 Author: Onion Knight <onion_knight@tutanota.com>
 Date:   Fri Jan 22 14:53:10 2021 +0000
 
-    Add new file bootloader.conf. Default debian calamares file, with line "efiBootloaderId:" uncommented and added "Debian" to solve “Minimal BASH-like editing…” / “grub>” at boot.
+    Add new file bootloader.conf. Default debian calamares file, with line "efiBootloaderId:" uncommented and added "Debian" to solve _Minimal BASH-like editing__ / _grub>_ at boot.
     See https://forums.whonix.org/t/whonix-host-operating-system/3931/296
 
 commit a201616e6da53d3aa2dae6f57504552a8d2ee701
@@ -1723,7 +1729,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Oct 27 16:30:04 2020 +0000
 
     Merge pull request #4 from onions-knight/master
-    
+
     Update settings.conf.dist
 
 commit 788390812585671d575d571449176ed795e27d34
@@ -1732,7 +1738,7 @@ Author: onions-knight <38859709+onions-knight@users.noreply.github.com>
 Date:   Tue Oct 27 15:25:09 2020 +0000
 
     Merge pull request #1 from onions-knight/onions-knight-patch-1
-    
+
     Update settings.conf.dist
 
 commit 12a73de45fb011291f94409950dfc452cb18f12b
@@ -1740,7 +1746,7 @@ Author: onions-knight <38859709+onions-knight@users.noreply.github.com>
 Date:   Tue Oct 27 15:24:04 2020 +0000
 
     Update settings.conf.dist
-    
+
     Adding sources-media and unmount-sources-media to allow downloading of grub-efi package during efi install
 
 commit a852db7ed48c963a19ff74d276c9ac97fbc61a0f
@@ -1754,9 +1760,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu May 14 18:46:20 2020 -0400
 
     delete etc/modprobe.d/30_live-config-dist.conf move to whonix-libvirt
-    
+
     so `options overlay metacopy=on` is set on Whonix-Host too
-    
+
     https://phabricator.whonix.org/T914
 
 commit cc48ff6a5bea7980c22993001d422010d0ead07a
@@ -1770,14 +1776,14 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 23 06:39:34 2020 -0400
 
     enable "Metadata only copy up"
-    
+
     do not copy whole file to overlay, when only a metadata specific
     operation like chown/chmod is performed
-    
+
     https://www.kernel.org/doc/Documentation/filesystems/overlayfs.txt
-    
+
     https://phabricator.whonix.org/T914#19876
-    
+
     options overlay metacopy=on
 
 commit 2091fcf92e22842d86fb0534dfd079b8a8125438
@@ -1799,7 +1805,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Apr 20 11:57:31 2020 +0000
 
     Merge pull request #3 from onions-knight/patch-3
-    
+
     Update main.py.dist
 
 commit 62e78c60a6fae6242d4c91b4c7b02ad3b31b35ef
@@ -1807,7 +1813,7 @@ Author: onions-knight <38859709+onions-knight@users.noreply.github.com>
 Date:   Mon Apr 20 11:50:21 2020 +0000
 
     Update main.py.dist
-    
+
     Using update-initramfs.orig.initramfs-tools instead of mkinitramfs, see https://forums.whonix.org/t/whonix-host-operating-system/3931/258
 
 commit fdbe45167f0d0641cb8ec0bba091cd619f524932
@@ -1833,7 +1839,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 11 18:30:32 2020 -0400
 
     config-package-dev displace
-    
+
     https://forums.whonix.org/t/whonix-host-operating-system/3931/230
 
 commit 8d2e9f61be87a85b4127bde277d2dc03c0d30a38
@@ -1849,7 +1855,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 11 21:48:14 2020 +0000
 
     Merge pull request #2 from onions-knight/patch-2
-    
+
     Create main.py
 
 commit 668941cbc36bef941d10405b85f808498a954d3e
@@ -1857,7 +1863,7 @@ Author: onions-knight <38859709+onions-knight@users.noreply.github.com>
 Date:   Fri Apr 10 13:54:48 2020 +0000
 
     Create main.py
-    
+
     Fix to allow creation of initramfs while still keeping live-boot packages. See https://forums.whonix.org/t/whonix-host-operating-system/3931/224
 
 commit fe601c0ef61d9a13c0519531312601a8e2880e92
@@ -1931,9 +1937,9 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Mar 15 15:01:42 2020 -0400
 
     renamed:    usr/share/pixmaps/install-whonix-host.png -> usr/share/pixmaps/install-host.png
-    
+
     https://forums.whonix.org/t/whonix-host-operating-system/3931/175
-    
+
     https://github.com/Whonix/live-config-dist/pull/1
 
 commit 27e5311b6a62f765c485a14236925142b09cf8d5
@@ -2049,7 +2055,7 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Mar 13 10:27:33 2020 -0400
 
     no longer config-package-dev hide /etc/lightdm/lightdm.conf.d/whonix-autologin.conf
-    
+
     because we want auto login for iso boots
 
 commit 2cc97020a2c0862a1bcd8b47a63c3657326f52b5
@@ -2069,10 +2075,10 @@ Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri Mar 13 10:19:42 2020 -0400
 
     import calamares settings for Whonix from whonix-libvirt package
-    
+
     Thanks to @Onion-Knight who contriuted most of these settings earlier to
     whonix-libvirt package.
-    
+
     https://forums.whonix.org/t/whonix-host-operating-system/3931/166
 
 commit a263367b19f89a14ad1f6ef55e950c6fc4c189b2
